@@ -199,12 +199,12 @@ struct handler_type_requirements
         asio::detail::argbyv( \
           asio::detail::rvref< \
             asio_true_handler_type>())) + \
-      (int) (sizeof( \
+      sizeof( \
         asio::detail::rorlvref< \
           asio_true_handler_type>()( \
             asio::detail::lvref<const asio::error_code>(), \
             asio::detail::lvref<const std::size_t>()), \
-        char(0))> ASIO_UNUSED_TYPEDEF)
+        (int)char(0))> ASIO_UNUSED_TYPEDEF
 
 #define ASIO_ACCEPT_HANDLER_CHECK( \
     handler_type, handler) \
