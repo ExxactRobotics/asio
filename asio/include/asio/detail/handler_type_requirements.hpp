@@ -198,7 +198,7 @@ struct handler_type_requirements
       sizeof( \
         asio::detail::argbyv( \
           asio::detail::rvref< \
-            asio_true_handler_type>())) + \
+            asio_true_handler_type>())) + (int)\
       sizeof( \
         asio::detail::rorlvref< \
           asio_true_handler_type>()( \
